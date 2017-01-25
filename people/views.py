@@ -12,13 +12,13 @@ def index(request):
     json_persons = persons.text
     persons_info = json.loads(json_persons)
     parsedData = []
-    for data in persons_info[:5000]:
+    for data in persons_info[:10000]:
         temp_dict = {}
         if data["armed"] == "No":
             temp_dict["day"] = data["day"]
             temp_dict["month"] = data["month"]
             temp_dict["year"] = data["year"]
             parsedData.append(temp_dict)
-    print(len(parsedData))
+    count = (len(parsedData))
 
     return render(request, "people/index.html", {"peoples": parsedData})
