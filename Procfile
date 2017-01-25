@@ -1,1 +1,1 @@
-web: gunicorn unarmeddeaths.wsgi --log-file -
+web: gunicorn shootings.wsgi --log-file -
