@@ -19,11 +19,19 @@
 
             {% for person in peoples %}
                 <tr>
-                    <img src="{% static "/images/frowny.png" %}" alt="frowny face" height=200 width=200>
-                </tr>
-            {% endfor %}
 
-                <p>There have been {{ count }} </p>
+                    <img src="{% static "frowny.png" %}" alt="image" height=200 width=200>
+
+                </tr>
+                {% if forloop.last %}
+                <br>
+                <br>
+                <br>
+                <div class="paragraphs">
+                <p class="lead text-center">There have been <strong>{{ countofpeoples }}</strong> people killed by shootings in the past year</p>
+                {% endif %}
+            {% endfor %}
+                </div>
             </tbody>
             </table>
         </div>

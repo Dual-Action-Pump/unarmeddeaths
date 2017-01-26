@@ -26,7 +26,7 @@ SECRET_KEY = '4fyhn0^go3738@z$sk1@=k04$al&_vb4&5)buq=a()a3ek(z7s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'unarmed-shootings-1.herokuapp.com',]
+ALLOWED_HOSTS = [u'unarmed-shootings-1.herokuapp.com', u'localhost',]
 
 
 

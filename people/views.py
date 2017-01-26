@@ -21,4 +21,5 @@ def index(request):
             parsedData.append(temp_dict)
     count = (len(parsedData))
 
-    return render(request, "people/index.html", {"peoples": parsedData})
+    return render(request, "people/index.html", {"peoples": parsedData,
+                                                 "countofpeoples": count})
