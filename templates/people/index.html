@@ -20,7 +20,7 @@
             {% for person in peoples %}
                 <tr>
 
-                    <img src="{% static "frowny.png" %}" alt="image" height=200 width=200>
+                    <img src="{% shootings/static "frowny.png" %}" alt="image" height=200 width=200>
 
                 </tr>
                 {% if forloop.last %}
@@ -28,7 +28,8 @@
                 <br>
                 <br>
                 <div class="paragraphs">
-                <p class="lead text-center">There have been <strong>{{ countofpeoples }}</strong> people killed by shootings in the past year</p>
+                <p class="lead text-center">There have been <strong>{{ countofpeoples }}</strong> that
+                were unarmed and killed by a police officer from 2015-2016. </p>
                 {% endif %}
             {% endfor %}
                 </div>

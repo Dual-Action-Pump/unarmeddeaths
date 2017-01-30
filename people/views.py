@@ -19,7 +19,10 @@ def index(request):
             temp_dict["month"] = data["month"]
             temp_dict["year"] = data["year"]
             parsedData.append(temp_dict)
+            print(data["year"])
     count = (len(parsedData))
+
+
 
     return render(request, "people/index.html", {"peoples": parsedData,
                                                  "countofpeoples": count})
